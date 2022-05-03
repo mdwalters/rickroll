@@ -7,7 +7,6 @@ class rickroll(Gtk.Window):
         super().__init__(title="Rickroll")
         self.set_default_size(500, 500)
         scrolled_window = Gtk.ScrolledWindow()
-        scrolled_window.set_border_width(10)
         scrolled_window.set_policy(Gtk.PolicyType.AUTOMATIC, Gtk.PolicyType.AUTOMATIC)
 
         label = Gtk.Label("""
@@ -71,9 +70,6 @@ Never gonna say goodbye
 Never gonna tell a lie and hurt you
 """)
         scrolled_window.add_with_viewport(label)
-
-        # self.add(label)
-
         self.add(scrolled_window)
 
 win = rickroll()
