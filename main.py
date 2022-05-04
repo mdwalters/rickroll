@@ -8,7 +8,6 @@ class rickroll(Gtk.Window):
         self.set_default_size(500, 500)
         scrolled_window = Gtk.ScrolledWindow()
         scrolled_window.set_policy(Gtk.PolicyType.AUTOMATIC, Gtk.PolicyType.AUTOMATIC)
-        Gtk.Window.set_icon_from_file('icon.png', True)
 
         label = Gtk.Label("""
 We're no strangers to love
