@@ -1,4 +1,2 @@
 pycairo
 PyGObject
-
-# See https://pygobject.readthedocs.io/en/latest/getting_started.html for packages.
