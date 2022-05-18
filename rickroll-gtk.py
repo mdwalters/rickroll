@@ -9,7 +9,8 @@ class rickroll(Gtk.Window):
         scrolled_window = Gtk.ScrolledWindow()
         scrolled_window.set_policy(Gtk.PolicyType.AUTOMATIC, Gtk.PolicyType.AUTOMATIC)
 
-        label = Gtk.Label("""
+        label = Gtk.Label()
+        label.set_text("""
 We're no strangers to love
 You know the rules and so do I (do I)
 A full commitment's what I'm thinking of
@@ -69,6 +70,7 @@ Never gonna make you cry
 Never gonna say goodbye
 Never gonna tell a lie and hurt you
 """)
+
         scrolled_window.add(label)
         self.add(scrolled_window)
 
