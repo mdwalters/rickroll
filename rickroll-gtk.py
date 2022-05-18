@@ -69,7 +69,7 @@ Never gonna make you cry
 Never gonna say goodbye
 Never gonna tell a lie and hurt you
 """)
-        scrolled_window.add_with_viewport(label)
+        scrolled_window.add(label) # _with_viewport
         self.add(scrolled_window)
 
 win = rickroll()
